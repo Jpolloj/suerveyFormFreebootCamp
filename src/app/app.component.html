@@ -4,21 +4,79 @@
   </head>
   <body>
     <h1 id="title">Que tipo de tecnologias te llaman la atención</h1><br>
-    <p id="description">Gracias por tomarte unos minutos para dejarnos saber que tecnologias usas para desarrollar</p>
+    <p id="description" style="color:white;">Gracias por tomarte unos minutos para dejarnos saber que tecnologias usas para desarrollar</p>
     <div class="container">
       <form id="surver-form" action="/">
         <label id="name-label" for="name">Nombre
-          <input id="name" type="text" placeholder="Ingrese su Nombre">
+          <input id="name" type="text" placeholder="Ingrese su Nombre" required>
         </label>
         <br>
         <label id="email-label" for="email">Email
-          <input id="email" type="email" placeholder="Ingrese su Correo">
+          <input id="email" type="email" placeholder="Ingrese su Correo" required>
         </label>
         <br>
         <label id="number-label" for="number">Celular
-          <input id="number" type="number" min="18" max="100" placeholder="Ingrese su Edad">
+          <input id="number" type="number" min="18" max="100" placeholder="Ingrese su Edad" required>
         </label>
-        <button id="submit">Continuar</button>
+
+        <label for="levelprofessional">Selecciona tu nivel profesional
+          <select id="dropdown" name="levelprofessional" required> 
+            <option disabled selected value="">Selecciona</option>
+            <option  value="Doctorado">Doctorado</option>
+            <option  value="Maestria">Maestria</option>
+            <option  value="Posgrado">Posgrado</option>
+            <option  value="Pregrado">Pregrado</option>
+            <option  value="Universitario">Universitario</option>
+            <option  value="Empirico">Empirico</option>
+          </select>
+        </label>
+
+        <label>Selecciona años de esperciencia profesional</label>
+        <label for="experiencie" class="lbl-experience">
+          <input name="experiencie" type=radio value="5" class="ipt-experience" checked><p class="p-experience">5 años</p>
+        </label>
+        <label for="experiencie" class="lbl-experience">
+          <input name="experiencie" type=radio value="4" class="ipt-experience"><p class="p-experience">4 años</p>
+        </label>
+        <label for="experiencie" class="lbl-experience">
+          <input name="experiencie" type=radio value="3" class="ipt-experience"><p class="p-experience">3 años</p>
+        </label>
+        <label for="experiencie" class="lbl-experience">
+          <input name="experiencie" type=radio value="2" class="ipt-experience"><p class="p-experience">2 años</p>
+        </label>
+        <label for="experiencie" class="lbl-experience">
+          <input name="experiencie" type=radio value="1" class="ipt-experience"><p class="p-experience">1 año</p>
+        </label>
+
+        <label>Selecciona años de esperciencia profesional</label>
+        <label for="technologies" class="lbl-technologies">
+          <input name="technologies" value="Angular" type="checkbox" class="ipt-technologies"><p class="p-technologies">Angular</p>
+        </label>
+        <label for="technologies" class="lbl-technologies">
+          <input name="technologies" value="NodeJs" type="checkbox" class="ipt-technologies"><p class="p-technologies">NodeJs</p>
+        </label>
+        <label for="technologies" class="lbl-technologies">
+          <input name="technologies" value="React" type="checkbox" class="ipt-technologies"><p  class="p-technologies">React</p>
+        </label>
+        <label for="technologies" class="lbl-technologies">
+          <input name="technologies" value="HTML5" type="checkbox" class="ipt-technologies"><p  class="p-technologies">HTML5</p>
+        </label>
+        <label for="technologies" class="lbl-technologies">
+          <input name="technologies" value="SCSS/CSS" type="checkbox" class="ipt-technologies"><p class="p-technologies">SCSS/CSS</p>
+        </label>
+        <label for="technologies" class="lbl-technologies">
+          <input name="technologies" value="JavaScript" type="checkbox" class="ipt-technologies"><p  class="p-technologies">JavaScript</p>
+        </label>
+        <label for="technologies" class="lbl-technologies">
+          <input name="technologies" value="Java" type="checkbox" class="ipt-technologies"><p class="p-technologies">Java</p>
+        </label>
+        <label>Dejanos una breve descripción respecto a tu perfil profesional</label>
+        <br>
+        <textarea class="txtarea"></textarea>
+        <br>
+        <div class="ctn-button">
+          <button id="submit">Continuar</button>
+        </div>
       </form>
     </div>
   </body>
